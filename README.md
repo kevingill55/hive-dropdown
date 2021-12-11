@@ -18,6 +18,10 @@ The dropdown menu accepts a two props: `items` and `multiple`. The `items` are e
   <Dropdown items={items} />
   ```
 ## Commands
+### `yarn`
+
+Installs the project's dependencies. Be sure to `yarn` before running the repo!
+
 ### `yarn start`
 
 Runs the code and example usage of the menu in the development mode.\
