@@ -17,12 +17,12 @@ const Dropdown = ({ items, multiple }) => {
   }, [items]);
 
   const onUnselectAll = useCallback(() => {
-    setSelectedItems([])
-  }, [])
+    setSelectedItems([]);
+  }, []);
 
   const onRemove = useCallback((itemIndex) => {
     setSelectedItems(selectedItems.filter(item => item !== itemIndex));
-  }, [selectedItems])
+  }, [selectedItems]);
 
   const onSelect = useCallback((itemIndex) => {
     if (multiple) {
