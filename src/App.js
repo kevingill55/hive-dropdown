@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Dropdown from './Dropdown';
+import { menuItems } from './items';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='container'>
+        <h1>Hive Take-Home Challenge: Dropdown Menu</h1>
+        <div style={{ padding: '12px' }}>Dropdown with Single Option</div>
+        <Dropdown items={menuItems} />
+        <div style={{ padding: '20px'}} />
+        <div style={{ padding: '12px' }}>Dropdown with Multiple Options</div>
+        <Dropdown items={menuItems} multiple/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
